@@ -30,6 +30,9 @@ El proyecto de la API está estructurado de la siguiente manera:
 
 La aplicación utiliza una base de datos MySQL para almacenar la información de los productos. La configuración de la base de datos se encuentra en el archivo `application.properties`.
 
+### Diagrama
+![image](https://github.com/JavierTurienzo/Actividad_4_ADAT/assets/116888591/2e2bef8c-9700-4c16-af9c-680446008f95)
+
 ## Parte del Frontend (Angular)
 
 ### Estructura del Proyecto
@@ -53,15 +56,38 @@ El proyecto de Angular consta de los siguientes componentes principales:
 - **@angular/router**: Permite la navegación entre diferentes componentes de la aplicación.
 - **@angular/common/http**: Proporciona funcionalidades para realizar solicitudes HTTP a la API backend.
 
+### Diagrama
+![image](https://github.com/JavierTurienzo/Actividad_4_ADAT/assets/116888591/1161fa5e-c032-4941-a457-3b3913a6b0ff)
+
+## Base de Datos
+
+La aplicación utiliza una base de datos para almacenar y gestionar los productos. A continuación se detalla el esquema y la estructura de la base de datos utilizada en el proyecto.
+
+### Esquema de la Base de Datos
+
+La base de datos está compuesta por una tabla principal llamada `productos`, la cual almacena información sobre los productos.
+
+#### Tabla `productos`
+
+| Campo      | Tipo de Dato | Descripción                               | Clave |
+|------------|--------------|-------------------------------------------|-------|
+| `id`       | INT          | Identificador único del producto          | PK    |
+| `nombre`   | VARCHAR      | Nombre del producto                       |       |
+| `precio`   | DECIMAL      | Precio del producto                       |       |
+| `cantidad` | INT          | Cantidad en inventario del producto       |       |
+| `categoria`| VARCHAR      | Categoría a la que pertenece el producto  |       |
+
+- **PK**: Primary Key (Clave Primaria)
+- La columna `id` se autoincrementa y sirve como clave primaria de la tabla.
+
 ## Instalación y Ejecución
 
 Para ejecutar la aplicación en un entorno local, sigue estos pasos:
 
+1. Utiliza Xampp para establecer los puertos y la conexion apache y mySql
+2. Crea la base de datos con el script.
 1. Clona el repositorio de la API y el repositorio de Angular en tu máquina local.
-2. Ejecuta la API Spring Boot.
-3. Ejecuta la aplicación Angular con el comando ng serve (puedes añadir --open para que te se te abra la url en el navegador automáticamente).
+3. Ejecuta la API Spring Boot.
+4. Ejecuta la aplicación Angular con el comando ng serve (puedes añadir --open para que te se te abra la url en el navegador automáticamente).
 
 Con estos pasos, deberías poder interactuar con la aplicación de gestión de productos.
-
-
-![image](https://github.com/JavierTurienzo/Actividad_4_ADAT/assets/116888591/1161fa5e-c032-4941-a457-3b3913a6b0ff)
