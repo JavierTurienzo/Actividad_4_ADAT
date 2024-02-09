@@ -1,0 +1,49 @@
+/* estilos.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff; /* Texto blanco */
+}
+
+.formulario-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #333; /* Fondo del formulario */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 5px;
+}
+
+button {
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #4caf50; /* Color verde */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Color verde más oscuro al pasar el ratón */
+}

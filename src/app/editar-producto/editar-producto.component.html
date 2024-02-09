@@ -1,0 +1,21 @@
+<!-- editar-producto.component.html -->
+
+<div *ngIf="producto" class="formulario-edicion">
+  <h3>Editar Producto</h3>
+  <form [formGroup]="formularioEdicion" (ngSubmit)="guardar()">
+    <label for="nombreEdicion">Nombre:</label>
+    <input type="text" id="nombreEdicion" formControlName="nombre">
+
+    <label for="cantidadEdicion">Cantidad:</label>
+    <input type="number" id="cantidadEdicion" formControlName="cantidad">
+
+    <label for="precioEdicion">Precio:</label>
+    <input type="number" id="precioEdicion" formControlName="precio">
+
+    <label for="categoriaEdicion">Categoría:</label>
+    <input type="text" id="categoriaEdicion" formControlName="categoria">
+
+
+    <button type="submit">Guardar</button>
+  </form>
+</div>

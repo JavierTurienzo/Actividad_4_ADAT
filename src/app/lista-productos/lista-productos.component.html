@@ -1,0 +1,25 @@
+
+
+<div class="productos-list-container">
+  <h2>Listado de Productos</h2>
+
+  <div *ngFor="let producto of productos" class="producto-item">
+    <div class="producto-info">
+      <p>{{ producto.nombre }}</p>
+      <p>Cantidad: {{ producto.cantidad }}</p>
+      <p>Precio: {{ producto.precio }}</p>
+      <p>Categoría: {{ producto.categoria }}</p>
+    </div>
+    <div class="producto-buttons">
+      <button class="button-editar" (click)="editarProducto(producto)">Editar</button>
+      <button class="button-borrar" (click)="borrarProducto(producto.id)">Borrar</button>
+    </div>
+  </div>
+
+  <app-editar-producto
+    *ngIf="productoSeleccionado"
+    [producto]="productoSeleccionado"
+    (guardarEdicion)="guardarEdicion($event)"
+  ></app-editar-producto>
+</div>
+
