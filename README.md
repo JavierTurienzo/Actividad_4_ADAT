@@ -85,7 +85,7 @@ La base de datos está compuesta por una tabla principal llamada `productos`, la
 Para ejecutar la aplicación en un entorno local, sigue estos pasos:
 
 1. Utiliza Xampp para establecer los puertos y la conexion apache y mySql
-2. Crea la base de datos con el script.
+2. Crea la base de datos con el script tienda.sql que incluye este mismo repositorio.
 1. Clona el repositorio de la API y el repositorio de Angular en tu máquina local.
 3. Ejecuta la API Spring Boot.
 4. Ejecuta la aplicación Angular con el comando ng serve (puedes añadir --open para que te se te abra la url en el navegador automáticamente).
